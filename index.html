@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roofing, Siding &amp; Gutters in Elmhurst, IL | United Exteriors Building Dreams Inc</title>
+<meta name="description" content="United Exteriors Building Dreams Inc — Elmhurst, IL's family-owned roofing, siding and gutter company. Licensed, bonded & insured. IL License #104.019028. Call (224) 522-6930 for a free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-900:#0c2e23; --green-800:#0f3d2e; --green-700:#14523e; --green-600:#1c6b51;
+  --gold:#f2b233; --gold-dark:#d99a1f;
+  --ink:#1b2420; --muted:#5c6b64; --bg:#f7faf8; --white:#ffffff;
+  --radius:14px; --shadow:0 12px 32px rgba(12,46,35,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.display{font-family:'Oswald',sans-serif;letter-spacing:.5px}
+img{max-width:100%}
+a{color:inherit}
+.container{width:min(1140px,92%);margin:0 auto}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(12,46,35,.97);backdrop-filter:blur(6px);box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px}
+.brand{color:#fff;text-decoration:none}
+.brand .name{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1.05rem,2.6vw,1.4rem);line-height:1.15;display:block}
+.brand .tag{font-size:.72rem;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;font-weight:600}
+.nav-cta{display:flex;align-items:center;gap:10px;background:var(--gold);color:var(--green-900);font-weight:800;text-decoration:none;padding:11px 20px;border-radius:999px;font-size:.95rem;white-space:nowrap;box-shadow:0 4px 14px rgba(242,178,51,.4);transition:transform .15s}
+.nav-cta:hover{transform:translateY(-2px)}
+.nav-cta svg{width:18px;height:18px}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--green-900) 0%,var(--green-800) 45%,var(--green-600) 100%);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 18% 20%,rgba(242,178,51,.16) 0,transparent 34%),
+  radial-gradient(circle at 85% 75%,rgba(255,255,255,.07) 0,transparent 40%);}
+.hero::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:70px;background:var(--bg);clip-path:polygon(0 100%,100% 100%,100% 20%,0 100%);}
+.hero-inner{position:relative;z-index:1;padding:88px 0 130px;max-width:720px}
+.eyebrow{display:inline-block;background:rgba(242,178,51,.18);border:1px solid rgba(242,178,51,.5);color:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.12;margin-bottom:18px;font-weight:700}
+.hero h1 .accent{color:var(--gold)}
+.hero p.lead{font-size:clamp(1.02rem,2.4vw,1.2rem);color:#d9e8e0;max-width:600px;margin-bottom:30px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;padding:15px 30px;border-radius:999px;font-size:1.02rem;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px}
+.btn-gold{background:var(--gold);color:var(--green-900);box-shadow:0 8px 24px rgba(242,178,51,.35)}
+.btn-outline{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,.12)}
+.hero-note{margin-top:18px;font-size:.88rem;color:#b9d2c6}
+
+/* Trust strip */
+.trust{background:#fff;border-bottom:1px solid #e4ece8}
+.trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:26px 0;text-align:center}
+.trust-item{padding:6px 10px}
+.trust-item .big{font-family:'Oswald',sans-serif;font-size:clamp(1.15rem,3vw,1.6rem);font-weight:700;color:var(--green-800)}
+.trust-item .small{font-size:.8rem;color:var(--muted);font-weight:500}
+
+/* Sections */
+section.block{padding:74px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 44px}
+.sec-head .kicker{color:var(--green-600);font-weight:800;letter-spacing:2.5px;text-transform:uppercase;font-size:.78rem;margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.2;margin-bottom:12px;color:var(--green-900)}
+.sec-head p{color:var(--muted)}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow);border-top:5px solid var(--green-600);transition:transform .18s}
+.card:hover{transform:translateY(-6px)}
+.card .icon{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,var(--green-700),var(--green-600));display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.card .icon svg{width:28px;height:28px;stroke:#fff}
+.card h3{font-size:1.22rem;margin-bottom:10px;color:var(--green-900)}
+.card p{color:var(--muted);font-size:.94rem}
+.card .svc-note{margin-top:12px;font-size:.82rem;color:var(--green-700);font-weight:600}
+
+/* About */
+.about{background:linear-gradient(180deg,#fff, #eef5f1)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.about-copy h2{font-size:clamp(1.6rem,4.5vw,2.3rem);color:var(--green-900);margin-bottom:16px;line-height:1.2}
+.about-copy p{color:var(--muted);margin-bottom:14px}
+.check-list{list-style:none;margin:20px 0}
+.check-list li{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;font-weight:600;color:var(--green-900)}
+.check-list .tick{flex:0 0 26px;height:26px;border-radius:50%;background:var(--green-600);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800}
+.about-badge{background:var(--green-900);color:#fff;border-radius:var(--radius);padding:38px 32px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.about-badge::before{content:"";position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:rgba(242,178,51,.18)}
+.about-badge .lic{font-family:'Oswald',sans-serif;font-size:1.5rem;color:var(--gold);margin-bottom:6px}
+.about-badge p{color:#d9e8e0;font-size:.94rem}
+.about-badge .addr{margin-top:16px;font-size:.9rem;color:#fff}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.step{background:#fff;border-radius:var(--radius);padding:34px 28px;box-shadow:var(--shadow);position:relative}
+.step .num{font-family:'Oswald',sans-serif;font-size:3.2rem;font-weight:700;color:var(--gold);line-height:1;opacity:.9}
+.step h3{margin:10px 0 8px;color:var(--green-900);font-size:1.25rem}
+.step p{color:var(--muted);font-size:.94rem}
+
+/* Contact */
+.contact{background:linear-gradient(135deg,var(--green-900),var(--green-700));color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(242,178,51,.2) 0,transparent 45%)}
+.contact-inner{position:relative;z-index:1}
+.contact h2{font-size:clamp(1.8rem,5vw,2.7rem);margin-bottom:12px}
+.contact h2 .accent{color:var(--gold)}
+.contact p.sub{color:#d9e8e0;max-width:560px;margin:0 auto 30px}
+.contact-cards{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.contact-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:var(--radius);padding:22px 34px;text-decoration:none;transition:background .15s}
+.contact-card:hover{background:rgba(255,255,255,.2)}
+.contact-card .lbl{font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:6px}
+.contact-card .val{font-size:1.25rem;font-weight:800}
+.hours{font-size:.88rem;color:#b9d2c6}
+
+/* Footer */
+footer{background:#081f18;color:#9fb3aa;padding:30px 0;text-align:center;font-size:.88rem}
+footer .fname{color:#fff;font-weight:700;font-family:'Oswald',sans-serif;letter-spacing:.5px}
+footer .fline{margin-top:6px;font-size:.82rem}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media(max-width:900px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-inner{grid-template-columns:repeat(2,1fr);gap:18px}
+  .about-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .services-grid{grid-template-columns:1fr}
+  section.block{padding:56px 0}
+  .nav-cta{padding:10px 14px;font-size:.85rem}
+  .hero-inner{padding:64px 0 110px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <span class="name">United Exteriors</span>
+      <span class="tag">Building Dreams Inc</span>
+    </a>
+    <a class="nav-cta" href="tel:+12245226930" aria-label="Call United Exteriors">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (224) 522-6930
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="eyebrow">Elmhurst, IL &bull; Licensed, Bonded &amp; Insured</span>
+      <h1>Roofing, Siding &amp; Gutters <span class="accent">Done Right</span> — The First Time</h1>
+      <p class="lead">We're a family-owned company helping Illinois homeowners create beautiful, safer homes. From roof repairs to full replacements, siding, and seamless gutters — one trusted crew for your whole exterior.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="tel:+12245226930">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (224) 522-6930
+        </a>
+        <a class="btn btn-outline" href="#services">Explore Services</a>
+      </div>
+      <p class="hero-note">Free quotes &bull; Storm-damage insurance claim help &bull; Se habla español</p>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="container trust-inner">
+      <div class="trust-item"><div class="big">Licensed &amp; Insured</div><div class="small">IL License #104.019028</div></div>
+      <div class="trust-item"><div class="big">Family-Owned</div><div class="small">Based in Elmhurst, IL</div></div>
+      <div class="trust-item"><div class="big">BBB A+ Rating</div><div class="small">BBB Accredited Business</div></div>
+      <div class="trust-item"><div class="big">James Hardie</div><div class="small">Top-quality siding brands</div></div>
+    </div>
+  </div>
+
+  <section class="block" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="kicker">What We Do</div>
+        <h2>One Crew for Your Entire Home Exterior</h2>
+        <p>Roofing, siding, gutters, windows and doors — all handled by a licensed, bonded, and insured team.</p>
+      </div>
+      <div class="services-grid">
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Roof Installation &amp; Replacement</h3>
+          <p>Full tear-offs and new roof installations built to protect your home for decades — residential and commercial.</p>
+          <div class="svc-note">Shingle &amp; cedar roofs</div>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/></svg></div>
+          <h3>Roof Repairs &amp; Leak Detection</h3>
+          <p>Fast, honest roof repairs — from patch repairs to leak detection and skylight fixes that stop water damage cold.</p>
+          <div class="svc-note">Skylights &amp; leak repair</div>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+          <h3>Siding, Soffit &amp; Fascia</h3>
+          <p>Beautiful, durable siding from the industry's highest-quality brands, including James Hardie.</p>
+          <div class="svc-note">James Hardie siding</div>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4zM4 8v3a8 8 0 0 0 8 8h0a8 8 0 0 0 8-8V8"/><path d="M12 19v3"/></svg></div>
+          <h3>Seamless Gutters</h3>
+          <p>Custom-fitted seamless gutter replacements measured to the exact dimensions of your home's exterior.</p>
+          <div class="svc-note">Custom-fit seamless systems</div>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 3v18M4 12h5"/></svg></div>
+          <h3>Windows &amp; Doors</h3>
+          <p>Window and door replacement projects completed with your absolute approval — start to finish.</p>
+          <div class="svc-note">Full replacement service</div>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg></div>
+          <h3>Storm Damage Claims</h3>
+          <p>We walk homeowners through the entire insurance process to satisfy storm-damage claims — no stress, no guesswork.</p>
+          <div class="svc-note">Insurance claim assistance</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <div class="kicker" style="color:var(--green-600);font-weight:800;letter-spacing:2.5px;text-transform:uppercase;font-size:.78rem;margin-bottom:10px">About Us</div>
+        <h2>A Family Business That Treats Your Home Like Our Own</h2>
+        <p><strong>United Exteriors Building Dreams Inc.</strong> is fully qualified to work directly with your insurance company on storm-damage claims, and is licensed, bonded, and insured throughout the State of Illinois.</p>
+        <p>Located in Elmhurst, we're committed to customer-service excellence — quality workmanship, honest pricing, and clear communication on every project.</p>
+        <ul class="check-list">
+          <li><span class="tick">✓</span> Licensed, bonded &amp; insured — Illinois</li>
+          <li><span class="tick">✓</span> Residential &amp; commercial projects</li>
+          <li><span class="tick">✓</span> Help with storm-damage insurance claims</li>
+          <li><span class="tick">✓</span> Free quotes — call or email anytime</li>
+        </ul>
+      </div>
+      <div class="about-badge reveal">
+        <div class="lic">IL License #104.019028</div>
+        <p>Licensed, bonded &amp; insured throughout the State of Illinois. BBB A+ rated, accredited business with 8 years of experience in roofing, siding, gutters, windows &amp; doors.</p>
+        <p class="addr">627 North York St, Unit 111<br>Elmhurst, Illinois</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="kicker">Getting Started</div>
+        <h2>How It Works</h2>
+        <p>From first call to final walkthrough — simple, transparent, and on your schedule.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="num">01</div>
+          <h3>Call for a Free Quote</h3>
+          <p>Reach out by phone or email and tell us about your project. We'll set up a free, no-pressure estimate at your home.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">02</div>
+          <h3>We Handle the Details</h3>
+          <p>From materials to storm-damage insurance paperwork, our team manages the process and keeps you informed at every step.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">03</div>
+          <h3>Enjoy Your New Exterior</h3>
+          <p>We complete your roof, siding, or gutters to your absolute approval — and stand behind the work long after.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block contact">
+    <div class="container contact-inner">
+      <h2>Ready to Protect Your Home? <span class="accent">Get Your Free Quote.</span></h2>
+      <p class="sub">Call or email today — our Elmhurst team will walk you through options, pricing, and next steps with zero pressure.</p>
+      <div class="contact-cards">
+        <a class="contact-card" href="tel:+12245226930">
+          <div class="lbl">Call Us</div>
+          <div class="val">(224) 522-6930</div>
+        </a>
+        <a class="contact-card" href="mailto:unitedexteriorsbd@gmail.com">
+          <div class="lbl">Email Us</div>
+          <div class="val">unitedexteriorsbd@gmail.com</div>
+        </a>
+      </div>
+      <p class="hours">Mon–Fri: 7:00 AM – 6:00 PM &nbsp;•&nbsp; Sat: 9:00 AM – 4:30 PM</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="fname">UNITED EXTERIORS — BUILDING DREAMS INC</div>
+    <div class="fline">627 North York St, Unit 111, Elmhurst, Illinois &nbsp;•&nbsp; IL License #104.019028</div>
+    <div class="fline">&copy; 2026 United Exteriors Building Dreams Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.12});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+})();
+</script>
+</body>
+</html>
